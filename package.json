@@ -1,0 +1,43 @@
+{
+  "name": "parcel-boilerplate",
+  "version": "1.0.0",
+  "bin": "./index.js",
+  "repository": "https://github.com/oddmouse/parcel-boilerplate",
+  "author": "Lindy Roquemore <hello@lindy.co>",
+  "license": "MIT",
+  "keywords": [
+    "airbnb",
+    "boilerplate",
+    "build",
+    "css",
+    "eslint",
+    "husky",
+    "parcel",
+    "prettier",
+    "purgecss",
+    "starter",
+    "tailwind",
+    "tailwindcss"
+  ],
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.8",
+    "prettier": "^2.0.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  }
+}
