@@ -4,7 +4,7 @@ Boilerplate for a fresh project configured with [ParcelJS](https://parceljs.org)
 
 ## Usage
 
-If `yarn` is detected, it will be used to install dependencies, otherwise it will fallback to `npm`. This can be overwridden with the `--npm` flag.
+If `yarn` is detected, it will be used to install dependencies, otherwise it will fallback to `npm`. This can be overridden with the `--npm` flag.
 
 ### Make a new project directory.
 
