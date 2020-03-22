@@ -4,8 +4,6 @@ Boilerplate for a fresh [Parcel](https://parceljs.org) + [Airbnb ESLint](https:/
 
 ## Usage
 
-Dependencies are installed using `yarn` if it is detected, otherwise `npm` wil be used. This can be overridden by using the `--npm` flag.
-
 ### Make a new project directory.
 
 ```
@@ -25,6 +23,8 @@ npx github:oddmouse/parcel-boilerplate
 ```
 npx github:oddmouse/parcel-boilerplate --tailwind
 ```
+
+Dependencies are installed using `yarn` if it is detected on your system, otherwise `npm` wil be used. Use the `--npm` flag to force installation with `npm` if that is preferred.
 
 ## Optional flags
 
