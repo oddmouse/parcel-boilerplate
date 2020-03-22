@@ -1,17 +1,35 @@
 # Parcel Boilerplate
 
-Boilerplate to create a new project configured with [Parcel](https://parceljs.org), ESLint, AirBnB, Prettier and Lint Staged.
+Boilerplate for a fresh project configured with [ParcelJS](https://parceljs.org), [ESLint](https://eslint.org), [Airbnb](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb) and [Prettier](https://prettier.io).
 
 ## Usage
 
+If `yarn` is detected, it will be used to install dependencies, otherwise it will fallback to `npm`. This can be overwridden with the `--npm` flag.
+
+### Make a new project directory.
+
 ```
-npx github:oddmouse/parcel-boilerplate
+$ mkdir <project-name> && cd <project-name>
 ```
 
-## Options
+### Run the boilerplate script
 
-- `--configs` - Only write dot config files and do not create a `package.json` or install dependencies.
+Parcel only
+
+```
+$ npx github:oddmouse/parcel-boilerplate
+```
+
+With Tailwind CSS
+
+```
+$ npx github:oddmouse/parcel-boilerplate --tailwind
+```
+
+## Optional flags
+
+- `--configs` - Only write the dot config files and do not create a `package.json` or install dependencies.
 
 - `--npm` - Install using `npm` instead of the default `yarn`.
 
-- `--tailwind` - Add the Tailwind CSS framework with PurgeCSS.
+- `--tailwind` - Add the [Tailwind CSS](https://tailwindcss.com) framework with [PurgeCSS](https://www.purgecss.com).
