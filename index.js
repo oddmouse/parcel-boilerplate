@@ -1,15 +1,12 @@
 #!/usr/bin/env node
 const { writeConfigs } = require('./lib/configs');
-const { writePackages } = require('./lib/packages');
-const { writeGit } = require('./lib/utils');
+const { writePackages, install } = require('./lib/packages');
+const { flags, writeGit } = require('./lib/utils');
 
-function install() {
-  writeConfigs();
+writeConfigs();
 
-  if (!process.argv.includes('--configs')) {
-    writePackages();
-    writeGit();
-  }
+if (!flags.configs) {
+  writePackages();
+  if (!flags.noGit) writeGit();
+  if (!flags.noInstall) install();
 }
-
-install();
