@@ -12,15 +12,15 @@ If `yarn` is detected, it will be used to install dependencies, otherwise it wil
 $ mkdir <project-name> && cd <project-name>
 ```
 
-### Run the boilerplate script
+### Run the boilerplate script.
 
-Parcel only
+#### Parcel only
 
 ```
 $ npx github:oddmouse/parcel-boilerplate
 ```
 
-With Tailwind CSS
+#### With Tailwind CSS
 
 ```
 $ npx github:oddmouse/parcel-boilerplate --tailwind
